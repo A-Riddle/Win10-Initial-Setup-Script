@@ -2105,4 +2105,4 @@ If ($args) {
 }
 
 # Call the desired tweak functions
-$tweaks | ForEach { Invoke-Expression $_ }
+$tweaks | ForEach { Invoke-Expression $_ } | Out-File C:\DecrapWIN10Log.txt
